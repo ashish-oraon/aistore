@@ -59,28 +59,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  min-height: 100vh;
+}
+footer {
+  min-height: 10vh;
+  background-color: #cacacc38;
+  text-align: center;
+  align-items: center;
+}
 div.banner {
   border: 0;
   border-top: 10px solid var(--color-brnd);
   border-radius: 10px;
-  height: 20vh;
+  height: 170px;
   background-color: var(--color-green-050);
 }
 
 header {
   height: 120px;
+  background-color: #0080001f;
 }
 
 header div.logo {
 }
 
 iframe {
-  width: 100% !important;
+  height: 280px !important;
+  width: 150px !important;
 }
 
 span.storeLogo {
-  font-size: 42px;
-  background: -webkit-linear-gradient(var(--color-prim-200), var(--color-prim-600));
+  background: -webkit-linear-gradient(
+    var(--color-prim-200),
+    var(--color-prim-600)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

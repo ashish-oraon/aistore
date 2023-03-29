@@ -20,16 +20,14 @@
   </head>
   <body>
     <header class="container-fluid">
-        <div class="container p-4">
-            <div class="row">
+            <div class="row py-4 px-1">
                 <div class="logo col-3">
-                    <div class="row p-4 align-items-center justify-content-sm-center h-100">
-                        <span class="p-2 storeLogo text-center">AI Store</span>
+                    <div class="row align-items-center justify-content-sm-center h-100">
+                        <span class="fs-2 storeLogo text-center">AI Store</span>
                     </div>
                 </div>
-                <div class="search-panel col-9">
+                <div class="search-panel col-9 col-sm-7">
                     <div class="row  align-items-center justify-content-sm-center h-100">
-
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Search Product" aria-label="Search Product" aria-describedby="Search Product">
                             <div class="input-group-append">
@@ -39,22 +37,29 @@
                     </div>
                 </div>
             </div>
-        </div>
-
     </header>
+
     <div class="main container">
+      <div class="container-fluid">
+
+      
       <div class="banner my-4">
         <div class="container p-4">
-          <h1 class="mx-4 my-0">Selected Products</h3>
+          <h1 class="mx-4 my-0">Selective Products</h3>
           <h3 class="mx-4 my-2">Great Deals</h4>
         </div>
       </div>
       <div class="container-fluid">
         <div id="productList" class="row justify-content-sm-center"></div>
       </div>
-      <!-- <script src="./script.js"></script> -->
+
+      
       <script src="./googleSheet.js"></script>
     </div>
+    </div>
+    <footer class="container-fluid">
+      </div>
+    </footer>
   </body>
 </html>
 
