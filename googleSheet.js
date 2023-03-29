@@ -20,7 +20,8 @@ fetch(
       .filter((f) => f[0].startsWith("<iframe "))
       .map((el) => {
         const frameDiv = document.createElement("div");
-        frameDiv.innerHTML = el[0];
+        frameDiv.setAttribute("class", "col-2 text-center");
+        frameDiv.innerHTML = `${el[0]}`;
         return frameDiv;
       });
 

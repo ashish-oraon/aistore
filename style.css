@@ -1,9 +1,85 @@
+:root {
+  --color-brnd: #53a318;
+  --color-prim-600: #318200;
+  --color-prim-400: #53a318;
+  --color-prim-200: #a9d18c;
+  --color-green-050: #e5fce7;
+  --color-green-200: #75ff30;
+  --color-green-400: #008a22;
+  --color-green-600: #006e2e;
+  --color-blue-600: #005eab;
+  --color-blue-400: #0077d9;
+  --color-blue-200: #bfe8ff;
+  --color-blue-050: #e8f5fc;
+  --color-price: #318200;
+  --color-purple-800: #230f33;
+  --color-purple-600: #8330c7;
+  --color-red-800: #bf0020;
+  --color-red-600: #eb0028;
+  --color-red-050: #fce8eb;
+  --color-yellow-600: #fc9e26;
+  --color-yellow-200: #ffc120;
+  --color-yellow-050: #fcf4e8;
+  --color-teal-400: #02e2ee;
+  --color-urgent: #e00038;
+  --color-black: #2b2430;
+  --color-gray-600: #615c66;
+  --color-gray-400: #8f8e91;
+  --color-gray-200: #cacacc;
+  --color-gray-100: #e4e4e6;
+  --color-gray-050: #f8f7fa;
+  --color-white: #fff;
+  --color-youtube: red;
+  --color-facebook: #3b5998;
+  --color-linkedin: #0077b5;
+  --color-twitter: #55acee;
+  --color-pinterest: #bd081c;
+  --color-google-plus: #db4a39;
+  --color-white-50pct: hsla(0, 0%, 100%, 0.5);
+  --color-black-50pct: rgba(43, 36, 48, 0.5);
+  --color-purple-90pct: rgba(131, 48, 199, 0.9);
+  --color-prim-dk: #318200;
+  --color-prim: #53a318;
+  --color-prim-lt: #a9d18c;
+  --color-ntc: #005eab;
+  --color-ntc-lt: #e8f5fc;
+  --color-accent: #8330c7;
+  --color-err: #eb0028;
+  --color-err-lt: #fce8eb;
+  --color-alert: #ffc120;
+  --color-alert-lt: #fcf4e8;
+  --color-gray-dk: #615c66;
+  --color-gray-md: #8f8e91;
+  --color-gray-lt: #cacacc;
+  --color-gray-clr: #e4e4e6;
+  --color-gray-bg: #f8f7fa;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-div#productList{
-    display: flex;
-    gap: 20px;
+div.banner {
+  border: 0;
+  border-top: 10px solid var(--color-brnd);
+  border-radius: 10px;
+  height: 20vh;
+  background-color: var(--color-green-050);
+}
+
+header {
+  height: 100px;
+}
+
+header div.logo {
+}
+
+iframe {
+  width: 100% !important;
+}
+
+h1.storeLogo {
+  background: -webkit-linear-gradient(var(--color-prim-200), var(--color-prim-600));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
