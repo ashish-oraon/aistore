@@ -78,7 +78,8 @@ iframe {
   width: 100% !important;
 }
 
-h1.storeLogo {
+span.storeLogo {
+  font-size: 40px;
   background: -webkit-linear-gradient(var(--color-prim-200), var(--color-prim-600));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
