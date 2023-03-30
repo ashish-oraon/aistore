@@ -1,3 +1,5 @@
+export {initialize as default}
+
 function initialize() {
   const sheetId = "1tRdogZyQuA4kBA6UhKLDwOTaOkAi2-gsrmSkFGuZxKI";
   const sheetName = "Sheet1";
@@ -100,10 +102,3 @@ function initialize() {
 
   return { setUpData, renderTiles, renderFilteredTiles };
 }
-
-function main() {
-  const appInit = initialize();
-  appInit.setUpData(appInit.renderTiles);
-}
-
-main();
