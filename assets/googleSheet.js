@@ -6,7 +6,7 @@ function initialize() {
   const addSearchEventListener = () => {
     document.getElementById("searchBtn").addEventListener("click", () => {
       const searchInput = document.getElementById("searchText");
-      const searchString = searchInput.value;
+      const searchString = searchInput.value.toLowerCase();
       const regionSelector = document.getElementById("selectedRegion");
       const region = regionSelector.value;
       searchInput.value = "";
