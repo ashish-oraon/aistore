@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <title>Welcome to AiStore</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
@@ -16,7 +17,7 @@
       integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <header class="container-fluid">
@@ -29,9 +30,9 @@
                 <div class="search-panel col-9 col-sm-7">
                     <div class="row  align-items-center justify-content-sm-center h-100">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Search Product" aria-label="Search Product" aria-describedby="Search Product">
+                            <input type="text" class="form-control" id="searchText" placeholder="Search Product" aria-label="Search Product" aria-describedby="Search Product">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-success" type="button">Search</button>
+                                <button class="btn btn-outline-success" type="button" id="searchBtn">Search</button>
                             </div>
                         </div>
                     </div>
@@ -40,7 +41,6 @@
     </header>
 
     <div class="main container">
-      <div class="container-fluid">
 
       
       <div class="banner my-4">
@@ -50,12 +50,13 @@
         </div>
       </div>
       <div class="container-fluid">
-        <div id="productList" class="row justify-content-sm-center"></div>
+        <div class="container p-4" id="countryContainer">
+        </div>
+        <div id="productList" class="row"></div>
       </div>
 
       
-      <script src="./googleSheet.js"></script>
-    </div>
+      <script src="./assets/googleSheet.js"></script>
     </div>
 
     <footer class="container-fluid">
